@@ -60,6 +60,6 @@ jobs:
           docker run -v $(pwd):/mnt/lineage -it waydroid-build-24.04 bash -c 'cd /mnt/lineage && simg2img  out/target/product/waydroid_x86_64/system.img ./system.img && simg2img  out/target/product/waydroid_x86_64/vendor.img ./vendor.img'
 
       - name: Upload APK to artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           path: ./*.img
