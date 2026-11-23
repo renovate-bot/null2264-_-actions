@@ -45,6 +45,7 @@ runs:
       with:
         distribution: ${{ inputs.distro }}
         java-version: ${{ inputs.java }}
+        verify-signature: false
 
     - name: Setup JDK ${{ inputs.java }} (GitHub)
       # https://github.com/actions/runner-images/blob/07d23cf/images/ubuntu/Ubuntu2204-Readme.md#java
